@@ -1,0 +1,428 @@
+:root{
+    --dark: #2a2a2a;
+    --blue: #4771cb;
+    --cian: #33ccc5;
+    --red: #fa6b55;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;/* propiedades de background color, image, position, repeate, attachment. */
+}
+
+.titulo{
+    font-size: 2em;
+}
+
+/* HEADER */
+
+header{
+    background: var(--cian);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+
+
+/* propiedades logo */
+
+#logo{ 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Menú */
+
+.boton{
+    background-color: var(--cian);
+    color: var(--cian);
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 40px;
+    padding-top: 12px;
+}
+
+nav a{
+    color: white !important;
+}
+
+nav a:hover{
+    color: #4771cb !important;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Sec1 */
+/* IMAGEN DE FONDO QUE SE AJUSTA */
+
+.sect1{
+    background: url(img/banner-left.png) top left no-repeat, url(img/banner-right.png) top right no-repeat ;
+    background-size: contain, contain;
+    height: 100vh;
+}
+
+.primerafila{
+    padding-top: 250px;
+}
+
+.primeracolumna{
+    padding-right: 100px;
+}
+
+@media screen and (min-width: 992px){
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+/* Texto principal grande */
+
+.sect1 .izquerda-contenido h2{
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 45px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #2a2a2a;
+    line-height: 72px;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
+    background: -moz-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
+    background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Open Sans';
+    font-size: 5em;
+    padding-bottom: 30px;
+}
+
+/* boton inicio */
+
+.botton a{
+    display: inline-block;
+    background-color: var(--cian);
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px 25px;
+    border-radius: 23px;
+    letter-spacing: 0.25px;
+    border-bottom: 2px solid var(--blue)!important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* boton hover */
+
+.botton a:hover{
+    background-color: var(--blue);
+    color: white;
+    border-bottom: 2px solid var(--cian)!important;
+}
+
+/* IAMGEN DE LA DERECHA DE LA PRIMERA SEC1 */
+
+.sect1 .derecha-img{
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 992px){
+    .derecha-img {
+        text-align: center;
+    }
+}
+
+
+
+/* Sec2 */
+
+#sec2{
+    padding-top: 500px;
+    padding-bottom: 200px;
+    
+}
+/* Hacer rectangular columna */
+.coldos{
+    border: solid 3px rgb(250, 250, 250);
+    border-radius: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 3px rgb(202, 202, 202);
+}
+
+/* imagen mas numero */
+.mascontenido .numerounoimg h6{
+    background-image: url(img/number-01.png);
+}
+
+.mascontenido .numero h6{
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 69px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 69px;
+    margin-top: -65px;
+    margin-bottom: 30px;
+}
+/* icono */
+.mascontenido .icon1{
+    width: 63px;
+    height: 63px;
+    margin: 0 auto;
+    background-image: url(img/features-01.png);
+}
+/* imagen mas numero */
+.mascontenido .numerodosimg h6{
+    background-image: url(img/number-02.png);
+}
+
+.mascontenido .numero h6{
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 69px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 69px;
+    margin-top: -65px;
+    margin-bottom: 30px;
+}
+/* icono */
+.mascontenido .icon2{
+    width: 63px;
+    height: 63px;
+    margin: 0 auto;
+    background-image: url(img/features-02.png);
+}
+/* imagen mas numero */
+.mascontenido .numerotresimg h6{
+    background-image: url(img/number-03.png);
+}
+
+.mascontenido .numero h6{
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 69px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 69px;
+    margin-top: -65px;
+    margin-bottom: 30px;
+}
+/* icono */
+.mascontenido .icon3{
+    width: 63px;
+    height: 63px;
+    margin: 0 auto;
+    background-image: url(img/features-01.png);
+}
+/* imagen mas numero */
+.mascontenido .numerocuatroimg h6{
+    background-image: url(img/number-04.png);
+}
+
+.mascontenido .numero h6{
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 69px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 69px;
+    margin-top: -55px;
+    margin-bottom: 60px;
+}
+/* icono */
+.mascontenido .icon4{
+    width: 63px;
+    height: 63px;
+    margin: 0 auto;
+    background-image: url(img/features-02.png);
+}
+
+/* texto titulo */
+.mascontenido h4{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+/* Linea */
+.mascontenido .lineapequeña{
+    width: 100px;
+    height: 2px;
+    background-color: var(--cian);
+    margin: 40px auto;
+}
+
+/* texto pequeñito ultimo */
+
+.mascontenido p{
+    position: relative;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    
+}
+
+/* SEC3 */
+/* container */
+
+.sect3{
+    padding-bottom: 100px;
+}
+
+/* Texto pequeñito (OUR SERVICES) */
+.sect3 .seccion-heading{
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.seccion-heading{
+    margin-bottom: 60px;
+}
+
+.seccion-heading h6{
+    font-size: 15px;
+    font-weight: 700;
+    color: #33ccc5;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* TITULO (Diccover...) */
+
+.seccion-heading h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+    line-height: 45px;
+}
+
+/* cambiar colores de TITULO (Discover...) */
+
+.seccion-heading h2 span{
+    color: #088ec3;
+}
+
+.seccion-heading h2 em{
+    font-style: normal;
+    color: #33ccc5;
+}
+
+/* container-fluid */
+
+.sect3 .container-fluid{
+    padding: 0px 80px;
+}
+
+/* media query */
+
+@media screen and (min-width: 992px) {
+    .col-lg-4{
+        flex: 0 0 auto;
+        width: 34%;
+    }
+}
+
+/* bordes por cada div */
+
+.servicio{
+    padding: 60px 30px;
+    border: 2px solid #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+/* añadir a iconos redonda */
+
+.servicio .icon{
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+}
+/* Ajustar imagen icono */
+
+.servicio .icon img{
+    width: 38px;
+    height: 38px;
+}
+
+img{
+    overflow: hidden;
+    text-align: center;
+}
+
+.servicio h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #eee;
+}
+
+footer p{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #2a2a2a;
+}
